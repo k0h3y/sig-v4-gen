@@ -1,0 +1,14 @@
+{
+  "name": "sig-v4-gen",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "sig-v4-gen": "./bin/sig-v4-gen.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.634.0"
+  }
+}
