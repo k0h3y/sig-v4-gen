@@ -23,10 +23,14 @@ const options = {
     search: () => query
 };
 options.headers.host = host;
+if (json.request.body) options.body = JSON.stringify(json.request.body)
 
 const signer = new core.Signers.V4(options, serviceName);
 
 const now = new Date();
 signer.addAuthorization(credential, now);
 
+console.log("Request Header:");
 console.log(options.headers);
+console.log("Request Body:")
+console.log(options.body)
