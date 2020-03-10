@@ -11,7 +11,7 @@ const serviceName = "execute-api";
 const protocol = json.request.protocol;
 const host = json.request.host;
 const path = json.request.path;
-const query = Object.keys(json.request).includes('query') ? json.requst.query : '';
+const query = Object.keys(json.request).includes('query') ? json.request.query : '';
 
 const options = {
     url: `${protocol}://${host}${path}${query}`,
@@ -20,7 +20,7 @@ const options = {
     method: json.request.method,
     methodIndex: json.request.method.toLowerCase(),
     pathname: () => path,
-    search: () => query
+    search: () => query.replace(/^\?/, '')
 };
 options.headers.host = host;
 if (json.request.body) options.body = JSON.stringify(json.request.body)
