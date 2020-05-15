@@ -1,1 +1,4 @@
 node_modules
+requestParams/*
+!requestParams/postRequest.sample.json
+!requestParams/getRequest.sample.json

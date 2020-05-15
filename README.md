@@ -11,7 +11,7 @@ $ npm install
 $ npm link
 
 ## use
-$ cat postRequest.sample.json | sig-v4-gen
+$ cat requestParams/postRequest.sample.json | sig-v4-gen
 
 Request Header:
 {
