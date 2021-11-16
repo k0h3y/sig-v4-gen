@@ -9,6 +9,6 @@
     "sig-v4-gen": "./bin/sig-v4-gen.js"
   },
   "dependencies": {
-    "aws-sdk": "^2.634.0"
+    "aws-sdk": "^2.814.0"
   }
 }
